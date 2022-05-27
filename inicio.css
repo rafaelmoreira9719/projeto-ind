@@ -238,10 +238,35 @@
 
 /* fim do carrosel */
 
-.primeiralinha{
+.container-produtos {
   width: 100%;
-  height: 1200px;
-  background-color: blue;
+}
+
+.primeiralinha{
+  height: 100vh;
+  background-color: #e0e0e0;
   margin-left: 80px;
-  margin-top: 657px;
+  margin-top: 625px;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 2.4vw;
+  align-items: center;
+}
+ 
+.primeiralinha img{
+  height: 150px;
+  width: 250px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.noticia{
+  font-size: large;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+img:hover{
+  filter: blur(1px);
 }
