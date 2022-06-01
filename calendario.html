@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="poslogin.css">
+    <link rel="stylesheet" href="calendario.css">
+    <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navegacao">
+        <ul>
+            <li class="lista active">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="titulo">Início</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="calendar-number-outline"></ion-icon>
+                    </span>
+                    <span class="titulo">Calendário</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </span>
+                    <span class="titulo">Mural</span>
+                </a>
+            </li>
+            <li class="lista">
+                <a href="#">
+                    <span class="icone">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span class="titulo">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- FIM DO MENU LATERAL ------------------------------------------------------------------------------->
+
+
+    <div class="container-tenis">
+        <h1>Calendário SNKRS</h1>
+        <br>
+        <div class="cal1">
+            <img src="card/calendário1.png" alt="">
+        </div>
+        <br>
+        <div class="cal2" style="display: none;" id="mais1">
+            <img src="card/calendário2.png" alt="">
+        </div>
+        <br>
+        <div class="cal3" style="display: none;" id="mais2">
+            <img src="card/calendário3.png" alt="">
+        </div>
+        <br>
+        <div class="cal4" style="display: none;" id="mais3">
+            <img src="card/calendário4.png" alt="">
+        </div>
+        <br>
+        <div class="cal5" style="display: none;" id="mais4">
+            <img src="card/calendário5.png" alt="">
+        </div>
+        <br>
+        <div class="cal6" style="display: none;" id="mais5">
+            <img src="card/calendário6.png" alt="">
+        </div>
+
+        <button onclick="mais()" class="btnC">Ver mais</button>
+        <button onclick="menos()" class="btnC2">Ver menos</button>
+    </div>
+
+
+</body>
+
+</html>
+<!-- FUNÇÃO PARA O MENU -->
+<script>
+
+    const lista = document.querySelectorAll('.lista');
+    function activeLink() {
+        lista.forEach((item) =>
+            item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    lista.forEach((item) =>
+        item.addEventListener('click', activeLink));
+
+</script>
+
+<script>
+
+    var contador = 0
+
+    function mais() {
+
+        contador++
+        mais1.style.display = `block`;
+
+        if (contador == 2) {
+            mais2.style.display = `block`;
+        } else if (contador == 3) {
+            mais3.style.display = `block`;
+        } else if (contador == 4) {
+            mais4.style.display = `block`;
+        } else if (contador == 5) {
+            mais5.style.display = `block`;
+        }
+    }
+
+    function menos() {
+        
+        contador--
+    
+    }
+
+</script>

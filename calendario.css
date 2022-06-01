@@ -1,0 +1,32 @@
+.container-tenis{
+margin-left: 150px;
+margin-top: 40px;
+width: 100%;
+}
+
+.btnC{
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;
+    background: #a5a5a5;
+    cursor: pointer;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    margin-left: 450px;
+    margin-bottom: 40px;
+}
+
+.btnC2{
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;
+    background: #a5a5a5;
+    cursor: pointer;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 40px;
+}
